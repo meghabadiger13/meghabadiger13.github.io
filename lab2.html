@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+<h2>Class Schedule for Fall 2026</h2>
     <table border="1">
         <thead>
             <tr>
@@ -44,9 +44,40 @@
                 <td>1</td>
             </tr>
         </tbody>
-       
     </table>
 
 </body>
+
+<footer>
+<h2>Favorite Class Form</h2>
+
+        <form action="/example.html" method="POST">
+
+            <div>
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="studentEmail">University Email:</label>
+                <input type="email" id="studentEmail" required>
+            </div>
+            <br>
+            <div>
+                <p>Favorite Class:</p>
+                <input type="radio" id="CSCE102" name="class" value="value1" checked>
+                <label for="CSCE102">CSCE102</label>
+                <br>
+
+                <input type="radio" id="BIOL405" name="class" value="value2">
+                <label for="BIOL405">BIOL405</label>
+                <br>
+            </div>
+
+            <button type="submit">Submit Favorite Class</button>
+
+        </form>
+</footer>
 
 </html>
