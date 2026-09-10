@@ -13,7 +13,7 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const queryValue = urlParams.get("query");
-    const outputDiv = document.getElementByID("resultOutput");
+    const outputDiv = document.getElementById("resultOutput");
 
     outputDiv.innerHTML = `<p>Loaded</p>`;
 </script>
