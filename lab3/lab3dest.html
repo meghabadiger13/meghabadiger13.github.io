@@ -11,7 +11,7 @@
 
 <script>
     const queryString = window.location.search;
-    const urlParams = URLSearchParams(queryString);
+    const urlParams = new URLSearchParams(queryString);
     const queryValue = urlParams.get("query");
     const outputDiv = document.getElementByID("resultOutput");
 
