@@ -2,16 +2,16 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f9;
-    color: #333333;
+    color: #267c33;
 }
 
 h1, h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
-    color: #2c2c2c;
+    color: #934949;
 }
 
 #main-header {
-    background-color: #1a252f;
+    background-color: #458bcd;
     color: white;
     text-align: center;
     border-bottom: 5px solid #000000;
@@ -20,5 +20,5 @@ h1, h2, h3 {
 .highlight {
     background-color: rgba(255, 235, 59, 0.3);
     font-weight: bold;
-    border-left: 4px solid #000000;
+    border-left: 4px solid #e814d2;
 }
