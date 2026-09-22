@@ -5,7 +5,7 @@ function takeDamage() {
     playerHealth = playerHealth - damageAmount;
 
     const healthText = document.getElementById("health-disparity");
-    const statusText = document.getElementbyId("status-message");
+    const statusText = document.getElementById("status-message");
 
     healthText.innerText = playerHealth;
 
