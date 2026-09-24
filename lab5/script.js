@@ -41,8 +41,8 @@ function takeWithdraw() {
         document.body.style.backgroundColor = "#5a1a1a";
 
         
-        document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "Add Money";
+        document.querySelector("withdraw-button").disabled = true;
+        document.querySelector("withdraw-button").innerText = "Add Money";
 
     }
 }
