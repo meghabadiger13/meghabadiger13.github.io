@@ -4,28 +4,24 @@ const damageAmount = 30;
 function takeDamage() {
     playerHealth = playerHealth - damageAmount;
 
-    const healthText = document.getElementById("health-disparity");
+    const healthText = document.getElementById("health-display");
     const statusText = document.getElementById("status-message");
 
-    healthText.innerText = playerHealth;
-
-    if (playerHealth > 0) 
-        {
-            healthText.innerText = playerHealth;
-            statusText.innerText = "You've been hit!";
-        
+    if(playerHealth > 0)
+    {
+        healthText.innerText = playerHealth;
+        statusText.innerText = "You've been hit!";
     }
     else
     {
         healthText.innerText = 0;
         statusText.innerText = "Game Over!";
         statusText.style.color = "#f9331d";
-        statusText.style.fontweight = "bold";
+        statusText.style.fontWeight = "bold";
 
-        document.body.style.backgroundColor = "#Salala";
+        document.body.style.backgroundColor = "#5a1a1a";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").InnerText = "Dead";
-
+        document.querySelector("button").innerText = "Dead";
     }
 }

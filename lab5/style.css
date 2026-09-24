@@ -3,17 +3,19 @@ body {
     text-align: center;
     margin-top: 50px;
     background-color: darkcyan;
-    color: white;
+    color:beige;
     transition: background-color 0.3s;
+
 }
 
 #player-card {
-    background-color: darkslategray;
-    border: 2px solid wheat;
+    background-color: hotpink;
+    border: 2px solid snow;
     border-radius: 10px;
     width: 300px;
     padding: 20px;
     margin: 0 auto;
+
 }
 
 button {
@@ -25,8 +27,10 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 button:hover {
     background-color: crimson;
+
 }
