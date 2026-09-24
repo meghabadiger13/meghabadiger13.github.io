@@ -4,21 +4,21 @@ const withdrawal = 10;
 function takeDamage() {
     accountStatus = accountStatus - withdrawal;
 
-    const healthText = document.getElementById("health-disparity");
+    const healthText = document.getElementById("account-balance");
     const statusText = document.getElementById("status-message");
 
     healthText.innerText = playerHealth;
 
-    if (playerHealth > 0) 
+    if (accountStatus > 0) 
         {
-            healthText.innerText = playerHealth;
-            statusText.innerText = "You've been hit!";
+            healthText.innerText = accountStatus;
+            statusText.innerText = "No money to withdraw";
         
     }
     else
     {
         healthText.innerText = 0;
-        statusText.innerText = "Game Over!";
+        statusText.innerText = "No money to withdraw";
         statusText.style.color = "#f9331d";
         statusText.style.fontweight = "bold";
 
