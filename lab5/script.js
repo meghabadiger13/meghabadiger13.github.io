@@ -19,6 +19,7 @@ function takeDeposit() {
     
 }
 
+
 function takeWithdraw() {
     accountStatus = accountStatus - withdrawAmount;
 
