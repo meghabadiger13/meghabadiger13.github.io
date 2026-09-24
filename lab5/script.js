@@ -2,7 +2,7 @@ let accountStatus = 1000;
 const withdraw = 100;
 const deposit = 100
 
-function withdraw() {
+function takeWithdraw() {
     accountStatus = accountStatus - withdraw;
 
     const accountText = document.getElementById("account-balance");
@@ -31,7 +31,7 @@ function withdraw() {
     }
 }
 
-function deposit() {
+function takeDeposit() {
     accountStatus = accountStatus - deposit;
 
     const accountText = document.getElementById("account-balance");
