@@ -1,18 +1,18 @@
 let accountStatus = 1000;
-const withdrawal = 10;
+const withdraw = 10;
 
-function takeDamage() {
-    accountStatus = accountStatus - withdrawal;
+function withdraw() {
+    accountStatus = accountStatus - withdraw;
 
-    const healthText = document.getElementById("account-balance");
+    const accountText = document.getElementById("account-balance");
     const statusText = document.getElementById("status-message");
 
-    healthText.innerText = playerHealth;
+    accountText.innerText = accountStatus;
 
     if (accountStatus > 0) 
         {
             healthText.innerText = accountStatus;
-            statusText.innerText = "No money to withdraw";
+            statusText.innerText = "Deposit";
         
     }
     else
@@ -25,7 +25,7 @@ function takeDamage() {
         document.body.style.backgroundColor = "#Salala";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").InnerText = "Dead";
+        document.querySelector("button").InnerText = "No Money";
 
     }
 }
