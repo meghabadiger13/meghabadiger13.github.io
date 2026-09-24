@@ -1,6 +1,6 @@
 let accountStatus = 1000;
 const withdrawAmount = 100;
-const depositAmount = 100
+const depositAmount = 100;
 
 function takeWithdraw() {
     accountStatus = accountStatus - withdrawAmount;
