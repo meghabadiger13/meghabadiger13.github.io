@@ -14,7 +14,11 @@ function takeDeposit() {
         {
             accountText.innerText = accountStatus;
             statusText.innerText = "Money Deposited";
-        
+             accountStatus = 0;
+        statusText.style.color = "#beige";
+        statusText.style.fontWeight = "bold";
+
+        document.body.style.backgroundColor = "#hotpink";
     }
     
 }
@@ -34,7 +38,6 @@ function takeWithdraw() {
     } 
     else {
         accountText.innerText = 0;
-        accountStatus = 0;
         statusText.innerText = "No money to withdraw";
         statusText.style.color = "#f9331d";
         statusText.style.fontWeight = "bold";
