@@ -1,8 +1,8 @@
-let playerHealth = 100;
-const damageAmount = 30;
+let accountStatus = 1000;
+const withdrawal = 10;
 
 function takeDamage() {
-    playerHealth = playerHealth - damageAmount;
+    accountStatus = accountStatus - withdrawal;
 
     const healthText = document.getElementById("health-disparity");
     const statusText = document.getElementById("status-message");
