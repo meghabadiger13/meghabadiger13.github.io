@@ -45,17 +45,5 @@ function deposit() {
             statusText.innerText = "Money Deposited";
         
     }
-    else
-    {
-        accountText.innerText = 1000000;
-        statusText.innerText = "Limit Hit!";
-        statusText.style.color = "#f9331d";
-        statusText.style.fontweight = "bold";
-
-        document.body.style.backgroundColor = "#Salala";
-
-        document.querySelector("button").disabled = true;
-        document.querySelector("button").InnerText = "Please Withdraw Money";
-
-    }
+    
 }
