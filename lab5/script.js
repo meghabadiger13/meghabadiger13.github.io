@@ -2,6 +2,23 @@ let accountStatus = 1000;
 const withdrawAmount = 100;
 const depositAmount = 100;
 
+function takeDeposit() {
+    accountStatus = accountStatus + depositAmount;
+
+    const accountText = document.getElementById("account-balance");
+    const statusText = document.getElementById("status-message");
+
+    accountText.innerText = accountStatus;
+
+    if (accountStatus > 0) 
+        {
+            accountText.innerText = accountStatus;
+            statusText.innerText = "Money Deposited";
+        
+    }
+    
+}
+
 function takeWithdraw() {
     accountStatus = accountStatus - withdrawAmount;
 
@@ -28,21 +45,4 @@ function takeWithdraw() {
         document.querySelector("button").innerText = "Add Money";
 
     }
-}
-
-function takeDeposit() {
-    accountStatus = accountStatus + depositAmount;
-
-    const accountText = document.getElementById("account-balance");
-    const statusText = document.getElementById("status-message");
-
-    accountText.innerText = accountStatus;
-
-    if (accountStatus > 0) 
-        {
-            accountText.innerText = accountStatus;
-            statusText.innerText = "Money Deposited";
-        
-    }
-    
 }
