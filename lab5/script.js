@@ -5,28 +5,27 @@ const depositAmount = 100;
 function takeWithdraw() {
     accountStatus = accountStatus - withdrawAmount;
 
-    const accountText = document.getElementById("account-balance");
-    const statusText = document.getElementById("status-message");
+      const accountText = document.getElementById("account-balance");
+      const statusText = document.getElementById("status-message");
 
     accountText.innerText = accountStatus;
 
-    if (accountStatus > 0) 
-        {
-            accountText.innerText = accountStatus;
-            statusText.innerText = "Money Withdrawn";
-        
-    }
-    else
-    {
+    if (accountStatus > 0) {
+        accountText.innerText = accountStatus;
+        statusText.innerText = "Money Withdrawn";
+    } 
+    else {
         accountText.innerText = 0;
         statusText.innerText = "No money to withdraw";
         statusText.style.color = "#f9331d";
-        statusText.style.fontweight = "bold";
+        statusText.style.fontWeight = "bold";
 
         document.body.style.backgroundColor = "#5a1a1a";
 
-        document.querySelector("button").disabled = true;
-        document.querySelector("button").InnerText = "No Money";
+        const button = document.querySelector("button");
+        if (button) {
+            button.disabled = true;
+            button.innerText = "No Money";
 
     }
 }
