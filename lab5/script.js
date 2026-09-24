@@ -22,10 +22,9 @@ function takeWithdraw() {
 
         document.body.style.backgroundColor = "#5a1a1a";
 
-        const button = document.querySelector("button");
-        if (button) {
-            button.disabled = true;
-            button.innerText = "No Money";
+        
+        document.querySelector("button").disabled = true;
+        document.querySelector("button").innerText = "Add Money";
 
     }
 }
