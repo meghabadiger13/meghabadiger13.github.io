@@ -13,7 +13,7 @@ function withdraw() {
     if (accountStatus > 0) 
         {
             accountText.innerText = accountStatus;
-            statusText.innerText = "Money available";
+            statusText.innerText = "Money Withdrawn";
         
     }
     else
@@ -42,20 +42,20 @@ function deposit() {
     if (accountStatus > 0) 
         {
             accountText.innerText = accountStatus;
-            statusText.innerText = "Money available";
+            statusText.innerText = "Money Deposited";
         
     }
     else
     {
-        accountText.innerText = 0;
-        statusText.innerText = "No money to withdraw";
+        accountText.innerText = 1000000;
+        statusText.innerText = "Limit Hit!";
         statusText.style.color = "#f9331d";
         statusText.style.fontweight = "bold";
 
         document.body.style.backgroundColor = "#Salala";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").InnerText = "No Money";
+        document.querySelector("button").InnerText = "Please Withdraw Money";
 
     }
 }
