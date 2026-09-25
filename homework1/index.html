@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Megha Badiger's Resume</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -13,34 +13,63 @@
 
     <main>
         <h2>Education</h2>
-        <table>
-            <tr>
-                <th>Degree/Program</th>
-                <th>Insitution</th>
-                <th>Expected Graduation</th>
-            </tr>
-            <tr>
-               <td>B.S. in Neuroscience (Cognitive & Behavioral Concentration)<br>Minor in Health Promotion, Education, and Behavior</td>
-                <td>University of South Carolina</td>
-                <td>May 2027</td>
-            </tr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Degree/Program</th>
+                    <th>Insitution</th>
+                    <th>Expected Graduation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.S. in Neuroscience (Cognitive & Behavioral Concentration)<br>Minor in Health Promotion, Education, and Behavior</td>
+                    <td>University of South Carolina</td>
+                    <td>May 2027</td>
+                </tr>
+            </tbody>
         </table>
 
         <h2>Research & Experience</h2>
-            <table>
-                <tr>
-                    <th>Position</th>
-                    <th>Lab / Organization</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Undergraduate Researcher</td>
-                    <td>Dr. Shustova’s Lab (Dept. of Chemistry & Biochemistry)</td>
-                    <td>Conducted research on next-generation materials using metal-organic frameworks (MOFs). Applied technical laboratory techniques including purification, rotary evaporation, and liquid-liquid extraction.</td>
-                </tr>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Lab / Organization</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Undergraduate Researcher</td>
+                        <td>Dr. Shustova’s Lab (Dept. of Chemistry & Biochemistry)</td>
+                        <td>Conducted research on next-generation materials using metal-organic frameworks (MOFs). Applied technical laboratory techniques including purification, rotary evaporation, and liquid-liquid extraction.</td>
+                    </tr>
+                </tbody>
             </table>
     </main>
 </body>
+<footer>
+    <h2>Contact Me</h2>
+    <form>
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <div>
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+</footer>
+
 
 
 </html>
