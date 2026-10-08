@@ -4,46 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UofSC Student Portal</title>
+
+    <title>Student Portal | University of South Carolina</title>
+
+    <!-- Connect CSS file -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <div class="container">
 
-        <!-- Sidebar -->
+        <!-- SIDEBAR -->
         <aside class="sidebar">
-            <h2>Dashboard</h2>
 
-            <button onclick="showCarolinaCash()">
-                Carolina Cash
-            </button>
+            <div class="university-brand">
+                <p class="university-label">UNIVERSITY OF</p>
+                <h2>SOUTH CAROLINA</h2>
+            </div>
 
-            <button onclick="showDiningMenu()">
-                Dining Hall Menu
-            </button>
+            <div class="sidebar-divider"></div>
 
-            <button onclick="showAcademics()">
-                Academics
-            </button>
+            <h3 class="dashboard-title">Dashboard</h3>
+
+            <!-- Navigation Buttons -->
+            <nav class="navigation" aria-label="Dashboard navigation">
+
+                <a href="#carolina-cash"
+                   class="nav-button"
+                   data-page="carolina-cash">
+                    Carolina Cash
+                </a>
+
+                <a href="#dining-hall"
+                   class="nav-button"
+                   data-page="dining-hall">
+                    Dining Hall Menu
+                </a>
+
+                <a href="#academics"
+                   class="nav-button"
+                   data-page="academics">
+                    Academics
+                </a>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Forever to Thee.</p>
+            </div>
+
         </aside>
 
-        <!-- Main Content -->
+
+        <!-- MAIN CONTENT -->
         <main class="main-content">
 
-            <h1>Student Portal</h1>
+            <div class="content-wrapper">
 
-            <p id="main-text">
-                Welcome to the landing page.
-                Navigate to the side of the screen
-                for more options.
-            </p>
+                <p class="section-label" id="section-label">
+                    WELCOME TO CAROLINA
+                </p>
+
+                <h1 id="page-title">
+                    Student Portal
+                </h1>
+
+                <div class="accent-line"></div>
+
+                <p id="page-description">
+                    Welcome to the landing page. Navigate to the side of the screen for more options.
+                </p>
+
+                <div class="information-card">
+
+                    <h3 id="card-title">
+                        Your Carolina Experience
+                    </h3>
+
+                    <p id="card-description">
+                        Explore campus resources, dining options, and academics all in one place.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <footer class="main-footer">
+                <p>UNIVERSITY OF SOUTH CAROLINA</p>
+                <p>Student Portal</p>
+            </footer>
 
         </main>
 
     </div>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 </html>
