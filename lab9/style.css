@@ -1,0 +1,87 @@
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+}
+
+/* Main website layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Garnet sidebar */
+.sidebar {
+    width: 30%;
+    background-color: #73000A;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Dashboard heading */
+.sidebar h2 {
+    color: beige;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Sidebar buttons */
+.sidebar button {
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: gold;
+    border: 3px solid beige;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.sidebar button:hover {
+    background-color: #333333;
+    color: #FFD700;
+}
+
+/* Main landing page */
+.main-content {
+    width: 70%;
+    background-color: beige;
+    padding: 60px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Student Portal heading */
+.main-content h1 {
+    color: #73000A;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+/* Main body text */
+.main-content p {
+    color: black;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+}
