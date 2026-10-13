@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 48px;
+}
+#game-container {
+    background-color: darkslategray;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px gray;
+}
