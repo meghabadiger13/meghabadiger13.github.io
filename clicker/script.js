@@ -22,6 +22,17 @@ function buyKeyboard()
         updateScreen();
     }
 }
+
+function buyIntern()
+{
+    if(linesOfCode >= internCost)
+    {
+        linesOfCode = linesOfCode - internCost;
+        interns = internCost + 1;
+        internCost = internCost * 1.5;
+        updateScreen();
+    }
+}
 function updateScreen()
 {
     document.getElementById("score-display").innerText = linesOfCode + " lines of code";
