@@ -3,28 +3,35 @@
     <head>
         <title>Code Clicker</title>
         <link rel="stylesheet" href="style.css">
-
     </head>
     <body>
-        <div id="game container">
+        <div id="game-container">
             <header>
                 <h1>Code Clicker</h1>
                 <h2 id="score-display">0 lines of code</h2>
                 <button id="main-button" onclick="writeCode()">Write Code</button>
             </header>
             <main id="shop">
-                <h3>Hardware Store (Manual Upgrade)</h3>
+                <h3>Hardware Store (Manual Upgrades)</h3>
                 <p>Current Click Power: <span id="power-display">1</span></p>
-                <button id="upgrade-button" onClick="buyKeyboard()">
-                    Buy Mechanical Keyboard (Cost: <span id="cost-display">50</span>)
+                <button id="upgrade-button" onclick="buyKeyboard()">
+                    Buy Mechanical Keyboard (+1 Power) (Cost: <span id="cost-display">50</span>)
+                </button>
+                <br><br>
+                <button id="upgrade-pro-button" onclick="buyKeyboardPro()">
+                    Buy Mechanical Keyboard Pro (+5 Power) (Cost: <span id="cost-pro-display">300</span>)
                 </button>
 
                 <h3>Hiring Department (Auto Clicking)</h3>
-                <p>Active Interns: <span id="intern-display">0</span></p>
-                <button id="intern-button" onClick="buyIntern()">
-                    Hire Intern (Cost: <span id="cost-intern-display">100</span>)
+                <p>Active Auto-Clickers: <span id="intern-display">0</span> Interns | <span id="senior-display">0</span> Seniors</p>
+                
+                <button id="intern-button" onclick="buyIntern()">
+                    Hire Intern (+1/sec) (Cost: <span id="intern-display-cost">100</span>)
                 </button>
-
+                <br><br>
+                <button id="senior-button" onclick="buySenior()">
+                    Hire Senior Developer (+5/sec) (Cost: <span id="senior-display-cost">500</span>)
+                </button>
             </main>
         </div>
         <script src="script.js"></script>
