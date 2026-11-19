@@ -44,22 +44,33 @@ function showPets(type) {
 }
 
 
-// Open the application for the selected pet
+
 function applyForPet(petName) {
 
-    // Save the animal's name
+    // Remember which pet was selected
     selectedPet = petName;
 
-    // Change the application heading
-    document.getElementById("applicationTitle").innerHTML =
-        "Apply to Adopt " + selectedPet + "! ♡";
+    // Update the application title
+    document.getElementById("applicationTitle").textContent =
+        "Apply to Adopt " + petName + "! ♡";
 
-    // Clear any information from a previous application
+    // Clear the form
     document.getElementById("adoptionForm").reset();
 
-    // Open the application
-    showPage("application");
+    // Hide all other pages
+    let pages = document.getElementsByClassName("page");
+
+    for (let i = 0; i < pages.length; i++) {
+        pages[i].style.display = "none";
+    }
+
+    // Show the application
+    document.getElementById("application").style.display = "block";
+
+    // Return to the top of the page
+    window.scrollTo(0, 0);
 }
+
 
 
 // Return to the selected animal's profile
