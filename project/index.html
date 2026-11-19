@@ -40,6 +40,9 @@
         <button class="yellow" onclick="showPets('all')">
             Browse All Pets
         </button>
+        <button class="purple" onclick="showPage('quiz')">
+    Take the Pet Personality Quiz!
+</button>
     </div>
 </section>
 
@@ -254,6 +257,108 @@
     </button>
 
 </section>
+
+
+<!-- PET PERSONALITY QUIZ -->
+<section id="quiz" class="page">
+
+    <h2>Find Your Paw-fect Match! 🐾</h2>
+
+    <p>
+        Answer a few silly questions to find
+        your perfect furry best friend!
+    </p>
+
+    <div class="quiz-box">
+
+        <h3>1. What is your ideal Saturday?</h3>
+
+        <select id="question1">
+            <option value="">Choose an answer</option>
+            <option value="Max">Going on an adventure!</option>
+            <option value="Luna">Sleeping in until noon</option>
+            <option value="Buddy">Playing sports all day</option>
+            <option value="Milo">Watching movies in pajamas</option>
+        </select>
+
+        <h3>2. Pick your favorite snack!</h3>
+
+        <select id="question2">
+            <option value="">Choose an answer</option>
+            <option value="Max">Pizza</option>
+            <option value="Luna">Fancy cheese</option>
+            <option value="Buddy">Protein bars</option>
+            <option value="Milo">Cookies</option>
+        </select>
+
+        <h3>3. What is your personality?</h3>
+
+        <select id="question3">
+            <option value="">Choose an answer</option>
+            <option value="Max">Friendly and outgoing</option>
+            <option value="Luna">Independent and mysterious</option>
+            <option value="Buddy">Energetic and competitive</option>
+            <option value="Milo">Sweet and a little silly</option>
+        </select>
+
+        <h3>4. Choose your dream vacation!</h3>
+
+        <select id="question4">
+            <option value="">Choose an answer</option>
+            <option value="Max">A beach trip with friends</option>
+            <option value="Luna">A relaxing spa weekend</option>
+            <option value="Buddy">Hiking in the mountains</option>
+            <option value="Milo">A cozy cabin getaway</option>
+        </select>
+
+        <br><br>
+
+        <button class="pink" onclick="findMatch()">
+            Find My Match! ♡
+        </button>
+
+    </div>
+
+    <br>
+
+    <button onclick="showPage('home')">
+        Back Home
+    </button>
+
+</section>
+
+
+<!-- QUIZ RESULTS -->
+<section id="quizResult" class="page">
+
+    <h2>Your Paw-fect Match Is...</h2>
+
+    <div class="quiz-box">
+
+        <div id="matchPicture" class="pet-emoji"></div>
+
+        <h2 id="matchName"></h2>
+
+        <p id="matchDescription"></p>
+
+        <button class="pink" onclick="viewMatch()">
+            Meet Your Match!
+        </button>
+
+    </div>
+
+    <br>
+
+    <button onclick="showPage('quiz')">
+        Take Quiz Again
+    </button>
+
+    <button onclick="showPage('home')">
+        Back Home
+    </button>
+
+</section>
+
 
 <!-- ABOUT PAGE -->
 <section id="about" class="page">

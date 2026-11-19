@@ -282,3 +282,49 @@ input:focus, textarea:focus, select:focus {
     font-weight: bold;
     color: #3d294d;
 }
+
+
+/* PET PERSONALITY QUIZ */
+
+.quiz-box {
+    background-color: #fff1f5;
+    border: 2px solid #3d294d;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 550px;
+    margin: 30px auto;
+}
+
+.quiz-box h3 {
+    font-size: 19px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.quiz-box select {
+    background-color: white;
+    border: 2px solid #d3b4eb;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.quiz-box button {
+    margin-top: 20px;
+}
+
+#matchPicture {
+    font-size: 100px;
+    margin: 20px;
+}
+
+#matchName {
+    color: #a15ab8;
+    font-size: 35px;
+}
+
+#matchDescription {
+    font-size: 19px;
+    line-height: 1.6;
+}
