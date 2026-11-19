@@ -9,250 +9,276 @@
 </head>
 <body>
 
-    <header>
-        <h1>🐾 Paws & Homes</h1>
-        <nav>
-            <a href="#" onclick="showPage('home')">Home</a>
-            <a href="#" onclick="showPets('all')">Adopt</a>
-            <a href="#" onclick="showPage('about')">About</a>
-        </nav>
-    </header>
+<header>
+    <h1>🐾 Paws & Homes</h1>
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPets('all')">Adopt</a>
+        <a href="#" onclick="showPage('about')">About</a>
+    </nav>
+</header>
 
-    <!-- HOME PAGE -->
-    <section id="home" class="page">
-        <h2>Find Your New Best Friend!</h2>
+<!-- HOMEPAGE -->
+<section id="home" class="page">
+    <h2>Find Your New Best Friend!</h2>
 
-        <div class="home-picture">
-            <span>🐶</span>
-            <span>🐱</span>
-        </div>
+    <div class="home-picture">
+        🐶 🐱
+    </div>
 
-        <p>Give a loving animal a forever home!</p>
+    <p>Give a loving animal a forever home!</p>
 
-        <div class="buttons">
-            <button class="pink" onclick="showPets('dog')">
-                Find a Dog
-            </button>
-
-            <button class="blue" onclick="showPets('cat')">
-                Find a Cat
-            </button>
-
-            <button class="yellow" onclick="showPets('all')">
-                Browse All Pets
-            </button>
-        </div>
-    </section>
-
-    <!-- AVAILABLE PETS PAGE -->
-    <section id="pets" class="page">
-        <h2>Meet Your New Best Friend!</h2>
-
-        <div class="buttons">
-            <button onclick="showPets('all')">All Pets</button>
-            <button onclick="showPets('dog')">Dogs</button>
-            <button onclick="showPets('cat')">Cats</button>
-        </div>
-
-        <div class="pet-container">
-
-            <div class="pet-card dog pink">
-                <div class="pet-emoji">🐕</div>
-                <h3>Max ♡</h3>
-                <p>Golden Retriever</p>
-                <p>2 years old</p>
-                <button onclick="showPage('max')">
-                    View Profile
-                </button>
-            </div>
-
-            <div class="pet-card cat blue">
-                <div class="pet-emoji">🐈</div>
-                <h3>Luna ♡</h3>
-                <p>Orange Tabby</p>
-                <p>1 year old</p>
-                <button onclick="showPage('luna')">
-                    View Profile
-                </button>
-            </div>
-
-            <div class="pet-card dog green">
-                <div class="pet-emoji">🐶</div>
-                <h3>Buddy ♡</h3>
-                <p>Border Collie</p>
-                <p>3 years old</p>
-                <button onclick="showPage('buddy')">
-                    View Profile
-                </button>
-            </div>
-
-            <div class="pet-card cat yellow">
-                <div class="pet-emoji">🐱</div>
-                <h3>Milo ♡</h3>
-                <p>Gray Cat</p>
-                <p>6 months old</p>
-                <button onclick="showPage('milo')">
-                    View Profile
-                </button>
-            </div>
-
-        </div>
-
-        <button onclick="showPage('home')">Back Home</button>
-    </section>
-
-    <!-- MAX PROFILE -->
-    <section id="max" class="page">
-        <h2>Meet Max! ♡</h2>
-
-        <div class="profile">
-            <div class="profile-picture">🐕</div>
-
-            <div class="profile-info">
-                <p><strong>Age:</strong> 2 years</p>
-                <p><strong>Breed:</strong> Golden Retriever</p>
-                <p><strong>Personality:</strong> Friendly, playful, and energetic</p>
-                <p><strong>Vaccinated:</strong> Yes ✓</p>
-                <p><strong>Adoption Fee:</strong> $150</p>
-            </div>
-        </div>
-
-        <button class="pink" onclick="showPage('application')">
-            Apply to Adopt ♡
+    <div class="buttons">
+        <button class="pink" onclick="showPets('dog')">
+            Find a Dog
         </button>
 
-        <br><br>
-        <button onclick="showPets('dog')">Back to Dogs</button>
-    </section>
+        <button class="blue" onclick="showPets('cat')">
+            Find a Cat
+        </button>
 
-    <!-- OTHER PET PROFILES -->
-    <section id="luna" class="page">
-        <h2>Meet Luna! ♡</h2>
+        <button class="yellow" onclick="showPets('all')">
+            Browse All Pets
+        </button>
+    </div>
+</section>
+
+<!-- AVAILABLE PETS -->
+<section id="pets" class="page">
+    <h2>Meet Your New Best Friend!</h2>
+
+    <div class="buttons">
+        <button onclick="showPets('all')">All Pets</button>
+        <button onclick="showPets('dog')">Dogs</button>
+        <button onclick="showPets('cat')">Cats</button>
+    </div>
+
+    <div class="pet-container">
+
+        <div class="pet-card dog pink">
+            <div class="pet-emoji">🐕</div>
+            <h3>Max ♡</h3>
+            <p>Golden Retriever</p>
+            <p>2 years old</p>
+            <button onclick="showPage('max')">
+                View Profile
+            </button>
+        </div>
+
+        <div class="pet-card cat blue">
+            <div class="pet-emoji">🐈</div>
+            <h3>Luna ♡</h3>
+            <p>Orange Tabby</p>
+            <p>1 year old</p>
+            <button onclick="showPage('luna')">
+                View Profile
+            </button>
+        </div>
+
+        <div class="pet-card dog green">
+            <div class="pet-emoji">🐶</div>
+            <h3>Buddy ♡</h3>
+            <p>Border Collie</p>
+            <p>3 years old</p>
+            <button onclick="showPage('buddy')">
+                View Profile
+            </button>
+        </div>
+
+        <div class="pet-card cat yellow">
+            <div class="pet-emoji">🐱</div>
+            <h3>Milo ♡</h3>
+            <p>Gray Cat</p>
+            <p>6 months old</p>
+            <button onclick="showPage('milo')">
+                View Profile
+            </button>
+        </div>
+
+    </div>
+
+    <button onclick="showPage('home')">Back Home</button>
+</section>
+
+<!-- MAX PROFILE -->
+<section id="max" class="page">
+    <h2>Meet Max! ♡</h2>
+
+    <div class="profile">
+        <div class="profile-picture">🐕</div>
+
+        <div class="profile-info">
+            <p><strong>Age:</strong> 2 years</p>
+            <p><strong>Breed:</strong> Golden Retriever</p>
+            <p><strong>Personality:</strong> Friendly, playful, and energetic</p>
+            <p><strong>Vaccinated:</strong> Yes ✓</p>
+            <p><strong>Adoption Fee:</strong> $150</p>
+        </div>
+    </div>
+
+    <button class="pink" onclick="applyForPet('Max')">
+        Apply to Adopt Max ♡
+    </button>
+
+    <br>
+    <button onclick="showPets('dog')">Back to Dogs</button>
+</section>
+
+<!-- LUNA PROFILE -->
+<section id="luna" class="page">
+    <h2>Meet Luna! ♡</h2>
+
+    <div class="profile">
         <div class="profile-picture">🐈</div>
-        <p>Age: 1 year</p>
-        <p>Breed: Orange Tabby</p>
-        <p>Personality: Sweet and curious</p>
-        <p><strong>Vaccinated:</strong> Yes ✓</p>
-                <p><strong>Adoption Fee:</strong> $60</p>
-            </div>
+
+        <div class="profile-info">
+            <p><strong>Age:</strong> 1 year</p>
+            <p><strong>Breed:</strong> Orange Tabby</p>
+            <p><strong>Personality:</strong> Sweet, curious, and affectionate</p>
+            <p><strong>Vaccinated:</strong> Yes ✓</p>
+            <p><strong>Adoption Fee:</strong> $75</p>
         </div>
+    </div>
 
-        <button class="pink" onclick="showPage('application')">
-            Apply to Adopt ♡
-        </button>
+    <button class="pink" onclick="applyForPet('Luna')">
+        Apply to Adopt Luna ♡
+    </button>
 
-        <br><br>
-        <button onclick="showPets('cat')">Back to Cats</button>
-    </section>
+    <br>
+    <button onclick="showPets('cat')">Back to Cats</button>
+</section>
 
-    <section id="buddy" class="page">
-        <h2>Meet Buddy! ♡</h2>
+<!-- BUDDY PROFILE -->
+<section id="buddy" class="page">
+    <h2>Meet Buddy! ♡</h2>
+
+    <div class="profile">
         <div class="profile-picture">🐶</div>
-        <p>Age: 3 years</p>
-        <p>Breed: Border Collie</p>
-        <p>Personality: Smart and energetic</p>
-        <p><strong>Vaccinated:</strong> Yes ✓</p>
-                <p><strong>Adoption Fee:</strong> $200</p>
-            </div>
+
+        <div class="profile-info">
+            <p><strong>Age:</strong> 3 years</p>
+            <p><strong>Breed:</strong> Border Collie</p>
+            <p><strong>Personality:</strong> Smart, energetic, and loyal</p>
+            <p><strong>Vaccinated:</strong> Yes ✓</p>
+            <p><strong>Adoption Fee:</strong> $125</p>
         </div>
+    </div>
 
-        <button class="pink" onclick="showPage('application')">
-            Apply to Adopt ♡
-        </button>
+    <button class="pink" onclick="applyForPet('Buddy')">
+        Apply to Adopt Buddy ♡
+    </button>
 
-        <br><br>
-        <button onclick="showPets('dog')">Back to Dogs</button>
-    </section>
+    <br>
+    <button onclick="showPets('dog')">Back to Dogs</button>
+</section>
 
-    <section id="milo" class="page">
-        <h2>Meet Milo! ♡</h2>
+<!-- MILO PROFILE -->
+<section id="milo" class="page">
+    <h2>Meet Milo! ♡</h2>
+
+    <div class="profile">
         <div class="profile-picture">🐱</div>
-        <p>Age: 6 months</p>
-        <p>Breed: Gray Cat</p>
-        <p>Personality: Playful and affectionate</p>
-        <p><strong>Vaccinated:</strong> Yes ✓</p>
-                <p><strong>Adoption Fee:</strong> $60</p>
-            </div>
+
+        <div class="profile-info">
+            <p><strong>Age:</strong> 6 months</p>
+            <p><strong>Breed:</strong> Gray Cat</p>
+            <p><strong>Personality:</strong> Playful, gentle, and loving</p>
+            <p><strong>Vaccinated:</strong> Yes ✓</p>
+            <p><strong>Adoption Fee:</strong> $60</p>
         </div>
+    </div>
 
-        <button class="pink" onclick="showPage('application')">
-            Apply to Adopt ♡
+    <button class="pink" onclick="applyForPet('Milo')">
+        Apply to Adopt Milo ♡
+    </button>
+
+    <br>
+    <button onclick="showPets('cat')">Back to Cats</button>
+</section>
+
+<!-- ADOPTION APPLICATION -->
+<section id="application" class="page">
+
+    <h2 id="applicationTitle">Adoption Application</h2>
+
+    <p>
+        Complete the form below to apply for adoption.
+    </p>
+
+    <form id="adoptionForm" onsubmit="submitApplication(event)">
+
+        <label>Full Name: *</label>
+        <input type="text" id="fullName" required>
+
+        <label>Email: *</label>
+        <input type="email" id="email" required>
+
+        <label>Phone Number: *</label>
+        <input type="tel" id="phone" required>
+
+        <label>Housing Type:</label>
+        <select id="housing">
+            <option>Apartment</option>
+            <option>House</option>
+            <option>Other</option>
+        </select>
+
+        <label>Previous Pet Experience:</label>
+        <textarea id="experience" rows="4"></textarea>
+
+        <button type="submit" class="green">
+            Submit Application
         </button>
 
-        <br><br>
-        <button onclick="showPets('cat')">Back to Cats</button>
-    </section>
+    </form>
 
-    <section id="application" class="page">
-        <h2>Bring Max Home! ♡</h2>
+    <button onclick="backToPet()">
+        Back to Pet Profile
+    </button>
 
-        <form id="adoptionForm" onsubmit="submitApplication(event)">
+</section>
 
-            <label>Full Name:</label>
-            <input type="text" id="fullName" required>
+<!-- CONFIRMATION -->
+<section id="confirmation" class="page">
 
-            <label>Email:</label>
-            <input type="email" id="email" required>
+    <div class="checkmark">✓</div>
 
-            <label>Phone Number:</label>
-            <input type="tel" id="phone" required>
+    <h2>Your Application Was Submitted!</h2>
 
-            <label>Housing Type:</label>
-            <select id="housing">
-                <option>Apartment</option>
-                <option>House</option>
-                <option>Other</option>
-            </select>
+    <p id="confirmationMessage"></p>
 
-            <label>Previous Pet Experience:</label>
-            <textarea id="experience" rows="4"></textarea>
+    <p>Our team will contact you soon. ♡</p>
 
-            <button type="submit" class="green">
-                Submit Application
-            </button>
-        </form>
+    <button class="purple" onclick="showPage('home')">
+        Return Home
+    </button>
 
-        <br>
-        <button onclick="showPage('max')">Back to Max</button>
-    </section>
+</section>
 
-    <!-- CONFIRMATION PAGE -->
-    <section id="confirmation" class="page">
-        <div class="checkmark">✓</div>
+<!-- ABOUT PAGE -->
+<section id="about" class="page">
+    <h2>About Paws & Homes</h2>
 
-        <h2>Your Application Was Submitted!</h2>
+    <p>
+        Paws & Homes helps connect loving animals
+        with people looking for a new best friend.
+    </p>
 
-        <p>Thank you for applying to adopt!</p>
-        <p>Our team will contact you soon. ♡</p>
+    <p>
+        Our goal is to make finding and adopting
+        a pet simple and fun!
+    </p>
 
-        <button class="purple" onclick="showPage('home')">
-            Return Home
-        </button>
-    </section>
+    <button onclick="showPets('all')">
+        Meet Our Pets
+    </button>
+</section>
 
-    <!-- ABOUT PAGE -->
-    <section id="about" class="page">
-        <h2>About Paws & Homes</h2>
+<footer>
+    <p>© 2026 Paws & Homes | Made with ♡</p>
+</footer>
 
-        <p>
-            Paws & Homes helps connect loving animals
-            with people looking for a new best friend.
-        </p>
+<script src="script.js"></script>
 
-        <p>
-            Our goal is to make finding and adopting
-            a pet simple and fun!
-        </p>
-
-        <button onclick="showPets('all')">
-            Meet Our Pets
-        </button>
-    </section>
-
-    <footer>
-        <p>© 2026 Paws & Homes | Made with ♡</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
